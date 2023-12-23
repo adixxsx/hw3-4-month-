@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "png-transparent-google-logo-google-search-advertising-google-company-text-trademark.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

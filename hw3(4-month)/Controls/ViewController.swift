@@ -50,20 +50,20 @@ class ViewController: UIViewController {
     }
     private func setupUI() {
         view.layer.backgroundColor = UIColor(red: 0.965, green: 0.965, blue: 0.965, alpha: 1).cgColor
-        LoginLabel()
-        UserIconBtn()
-        WelcomeLabel()
+        loginLbl()
+        userIconButton()
+        welcomeLbl()
         girlImageView()
-        OrangeLabel()
+        orangeLabel()
         enterNumberTextField()
-        ChangeNumber()
-        LoginBtn()
-        GoogleView()
-        GoogleLabel()
-        DontAcc()
+        changeNumberButton()
+        loginBtn()
+        googleUIView()
+        googleLbl()
+        dontHaveAcc()
     }
     
-    private func LoginLabel() {
+    private func loginLbl() {
         view.addSubview(loginLabel)
         
         loginLabel.snp.makeConstraints { make in
@@ -72,17 +72,16 @@ class ViewController: UIViewController {
         }
     }
     
-    private func UserIconBtn() {
+    private func userIconButton() {
         view.addSubview(userIconBtn)
         
         userIconBtn.snp.makeConstraints { make in
             make.top.equalTo(loginLabel.snp.top)
             make.leading.equalTo(loginLabel.snp.leading).offset(52)
-            //make.trailing.equalTo(view.snp.trailing).offset(320)
         }
     }
     
-    private func WelcomeLabel() {
+    private func welcomeLbl() {
         view.addSubview(welcomelabel)
         
         welcomelabel.snp.makeConstraints { make in
@@ -102,7 +101,7 @@ class ViewController: UIViewController {
         }
 
     
-    private func OrangeLabel() {
+    private func orangeLabel() {
             view.addSubview(enterYourMobileNumberLabel)
             
         enterYourMobileNumberLabel.snp.makeConstraints { make in
@@ -121,7 +120,7 @@ class ViewController: UIViewController {
            }
        }
     
-    private func ChangeNumber() {
+    private func changeNumberButton() {
         view.addSubview(changeNumber)
         
         changeNumber.snp.makeConstraints { make in
@@ -131,7 +130,7 @@ class ViewController: UIViewController {
         }
     }
     
-    private func LoginBtn() {
+    private func loginBtn() {
         view.addSubview(loginButton)
         
         loginButton.snp.makeConstraints { make in
@@ -156,7 +155,7 @@ class ViewController: UIViewController {
                 }
                 else {
                     enterNumberTF.text = ""
-                    enterNumberTF.placeholder = "Номер должен содержать 996 и 12 символов.."
+                    enterNumberTF.placeholder = "Fill 996 and 12 symbols alltogether!"
                     enterNumberTF.layer.borderWidth = 1
                     enterNumberTF.layer.borderColor = UIColor.red.cgColor
                 }
@@ -166,7 +165,7 @@ class ViewController: UIViewController {
             }
         }
     
-    private func GoogleView() {
+    private func googleUIView() {
         view.addSubview(googleView)
         
         googleView.snp.makeConstraints { make in
@@ -177,7 +176,7 @@ class ViewController: UIViewController {
         }
     }
     
-    private func GoogleLabel() {
+    private func googleLbl() {
         view.addSubview(googleLabel)
         
         googleLabel.snp.makeConstraints { make in
@@ -187,7 +186,7 @@ class ViewController: UIViewController {
         }
     }
     
-    private func DontAcc() {
+    private func dontHaveAcc() {
         view.addSubview(dontAcc)
         
         dontAcc.snp.makeConstraints { make in

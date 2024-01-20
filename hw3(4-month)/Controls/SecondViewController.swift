@@ -14,16 +14,16 @@ class SecondViewController: UIViewController, UITableViewDataSource {
        private let tableView = UITableView()
        
        private let peoples: [Contact] = [
-           .init(name: "Jane Cooper", phoneNumber: "(270) 555-0117", image: "1"),
-           .init(name: "Devon Lane", phoneNumber: "(308) 555-0121", image: "2"),
-           .init(name: "Darrell Steward", phoneNumber: "(684) 555-0102", image: "3"),
-           .init(name: "Devon Lane", phoneNumber: "(704) 555-0127", image: "4"),
-           .init(name: "Courtney Henry", phoneNumber: "(505) 555-0125", image: "5"),
-           .init(name: "Wade Warren", phoneNumber: "(225) 555-0118", image: "6"),
-           .init(name: "Bessie Cooper", phoneNumber: "(406) 555-0120", image: "7"),
-           .init(name: "Robert Fox", phoneNumber: "(480) 555-0103", image: "8"),
-           .init(name: "Jacob Jones", phoneNumber: "(702) 555-0122", image: "9"),
-           .init(name: "Jenny Wilson", phoneNumber: "(239) 555-0108", image: "10")
+           .init(name: "Lionel Messi", phoneNumber: "(987) 888-8888", image: "leo"),
+           .init(name: "Madison Beer", phoneNumber: "(999) 999-9999", image: "mad"),
+           .init(name: "Adilet Sabirkulov", phoneNumber: "(996)554 744141", image: "adi"),
+           .init(name: "Ramazan Abduraimov", phoneNumber: "(996)706 407943", image: "rom"),
+           .init(name: "Reyna Erkebaeva", phoneNumber: "(996)706 826789", image: "ri"),
+           .init(name: "Bekzhan Tologonov", phoneNumber: "(996)990 222105", image: "bek"),
+           .init(name: "Khani Bakybaev", phoneNumber: "(996)707 100206", image: "xan"),
+           .init(name: "Abdymalik Akylbek uulu", phoneNumber: "(996)702 332583", image: "max"),
+           .init(name: "Azem Toktosheva", phoneNumber: "(996)777 554411", image: "azem"),
+           .init(name: "Syrgaiym Kamchybekova", phoneNumber: "(996)773 910190", image: "syra")
        ]
 
     private lazy var titleLabel: UILabel = MakerView.shared.createLabel(text: "My Contacts", size: 16, weight: .semibold, textAlignment: .center)
